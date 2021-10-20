@@ -15,7 +15,11 @@ allow hal_fingerprint_default {
 
 r_dir_file(hal_fingerprint_default, firmware_file)
 r_dir_file(hal_fingerprint_default, input_device)
+
+# Allow hal_lineage_fod_default to access graphics sysfs
 r_dir_file(hal_fingerprint_default, vendor_sysfs_graphics)
+allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_graphics:file r_file_perms;
 
 # Allow hal_fingerprint_default to get IDspService interface
 hal_client_domain(hal_fingerprint_default, vendor_hal_dspmanager)
@@ -31,3 +35,6 @@ get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 
 # Allow hal_fingerprint_default to add hal_xiaomi_fingerprint_hwservice
 add_hwservice(hal_fingerprint_default, hal_xiaomi_fingerprint_hwservice)
+
+# Allow hal_fingerprint_default to read and write to fod sysfs
+allow hal_fingerprint_default vendor_sysfs_fod:file rw_file_perms;
