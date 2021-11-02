@@ -1,6 +1,5 @@
 # vendor-camera.*
-vendor.camera.sensor.              u:object_r:vendor_camera_sensor_prop:s0
-vendor.camera.boot_complete        u:object_r:vendor_camera_prop:s0
+vendor.camera.                     u:object_r:vendor_camera_prop:s0
 
 # ro-vendor-camera.*
 ro.vendor.camera.                  u:object_r:vendor_camera_prop:s0
