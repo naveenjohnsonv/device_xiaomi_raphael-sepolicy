@@ -35,7 +35,6 @@ allow xiaomiparts {
   cgroup
   sysfs_leds
   vendor_sysfs_graphics
-  sysfs_thermal
 }:file rw_file_perms;
 
 # Allow xiaomiparts to write to mi_thermald
