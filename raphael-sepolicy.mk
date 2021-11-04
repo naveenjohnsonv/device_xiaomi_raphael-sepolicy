@@ -5,23 +5,23 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xiaomi/raphael-sepolicy/private
 
 # NXP Sepolicy
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/raphael-sepolicy/vendor/nxp
 
 # Misc Sepolicy
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/raphael-sepolicy/vendor/misc
 
 # Lineage Sepolicy
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/raphael-sepolicy/vendor/lineage
 
 # Qcom Sepolicy
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
 	device/xiaomi/raphael-sepolicy/vendor/qcom
 
 # Xiaomi Sepolicy
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/raphael-sepolicy/vendor/xiaomi/audio \
     device/xiaomi/raphael-sepolicy/vendor/xiaomi/battery \
     device/xiaomi/raphael-sepolicy/vendor/xiaomi/camera \
